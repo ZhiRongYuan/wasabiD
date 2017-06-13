@@ -1,0 +1,198 @@
+@import url("../base.scss") ;
+.clearfix{//清浮动
+  zoom:1
+}
+.clearfix:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.wasabi-multiplePicker .allCheckedWrap{
+  background: #eff0f1;
+  height: 40px;
+}
+.wasabi-multiplePicker .allCheckedWrap>.wasabi-multiplePicker-checkbox{
+  margin-top: 12px;
+  margin-left: 20px;
+}
+.wasabi-multiplePicker-checkbox{
+  position: relative;
+  display: inline-block;
+  padding-right: 6px;
+  width: 145px;
+}
+.wasabi-multiplePicker-checkbox .firstLevelCheckBoxDisabled{
+  opacity: 0.5;
+  filter:alpha(opacity=50); /* 针对 IE8 以及更早的版本 */
+}
+.wasabi-multiplePicker-checkbox.checkBoxDisabled {
+  opacity: 0.5;
+  filter:alpha(opacity=50); /* 针对 IE8 以及更早的版本 */
+}
+.wasabi-multiplePicker-checkbox input[type="checkbox"]{
+  visibility: hidden;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.wasabi-multiplePicker-checkbox>i{
+  cursor: pointer;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 0;
+  left: 0;
+  background: transparent;
+  border:1px solid #afb3b8;
+}
+.wasabi-multiplePicker-checkbox>label>span
+{
+  max-width: 105px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding-left: 5px;
+  color: #333333;
+}
+.wasabi-multiplePicker-checkbox>label em{
+  color: #f58030;
+  position: relative;
+  top: -3px;
+}
+.wasabi-multiplePicker-checkbox>label>.icon-drop{
+  font-size: 2px;
+  color: #a2a6aa;
+  padding-left: 3px;
+  position: absolute;
+  top: 2px;
+}
+
+.wasabi-multiplePicker-checkbox.checked>i{
+  background: #1ec9c3;
+  border:1px solid #1ec9c3;
+}
+.wasabi-multiplePicker-checkbox.hasChild>i:before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 2px;
+  margin-left: -4px;
+  margin-top: -1px;
+  background: #a59f9f;
+}
+.wasabi-multiplePicker-checkbox.checked>i:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background: transparent;
+  top: 3px;
+  left: 1px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.wasabi-multiplePicker-checkbox .checkbox-arrow{
+  position: relative;
+  font-size: 8px;
+
+}
+
+
+
+
+.wasabi-multiplePicker>.fistLevelWrap{
+  //padding: 0 10px;
+}
+
+.wasabi-multiplePicker>.fistLevelWrap .classify-content{
+
+}
+.wasabi-multiplePicker>.fistLevelWrap .classify-content:nth-child(odd){//奇数行
+  background: #FFFFFF;
+}
+.wasabi-multiplePicker>.fistLevelWrap .classify-content:nth-child(even){//偶数行
+  background: #f8f8f8;
+}
+.wasabi-multiplePicker>.fistLevelWrap .classify-content .classifyName{
+  width: calc(15% - 20px);
+  float: left;
+  margin-top: 13px;
+  margin-left: 20px;
+}
+.wasabi-multiplePicker>.fistLevelWrap .classify-content .classifyDisabled{
+  opacity: 0.5;
+  filter:alpha(opacity=50); /* 针对 IE8 以及更早的版本 */
+}
+.wasabi-multiplePicker>.fistLevelWrap .classify-content .classify-child-wrap{
+  float: left;
+  width: calc(85% - 20px);
+}
+
+.wasabi-multiplePicker>.fistLevelWrap li.fistLevel-childLi{
+  float: left;
+  padding: 4px 8px 13px 4px;
+  position: relative;
+  top: 7px;
+}
+.wasabi-multiplePicker>.fistLevelWrap li.fistLevel-childLi.active{
+  background:#ecfafa ;
+  box-shadow: 0 0 10px 0 #b7bbbb;
+}
+.wasabi-multiplePicker>.fistLevelWrap li.fistLevel-childLi.active:after{
+  content: "";
+  width: 156px;
+  height: 4px;
+  background: #ecfafa;
+  position: absolute;
+  left: 0px;
+  top: 18px;
+  z-index: 9;
+}
+
+.wasabi-multiplePicker .secondLevelWrap{
+  display: block;
+  position: absolute;
+  left: 0px;
+  width: 466px;
+  overflow: hidden;
+  background: #ecfafa;
+  z-index: 2;
+  padding: 10px 0;
+  box-shadow: 0px 3px 10px 0 #b7bbbb;
+}
+
+.wasabi-multiplePicker .secondLevelWrap>li{
+  float: left;
+  padding: 13px 0 13px 10px;
+
+}
+.wasabi-multiplePicker .secondLevelWrap>li.closeBtn{
+  float: right;
+  padding: 0px;
+  margin-top: 12px;
+  margin-right: 20px;
+}
+.wasabi-multiplePicker .secondLevelWrap>li.closeBtn .close{
+  border-radius: 4px;
+  border-right: 1px solid #d4d7db;
+}
+
+
+
+.expressPart-detail .wasabi-multiplePicker .wasabi-modal-content{
+  overflow: visible!important;
+}
+
+.expressPart-detail .wasabi-modal-container .wasabi-modal{
+  overflow: visible!important;
+}

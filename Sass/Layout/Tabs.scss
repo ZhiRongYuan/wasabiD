@@ -1,0 +1,86 @@
+
+@import url("../base.scss");
+.wasabi-tabs {
+}
+.wasabi-tabs>.header{
+
+}
+.wasabi-tab
+{
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+  margin-right: 5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.wasabi-tab.default {
+  border: 1px solid #d9d9d9;
+  background-color: #f9f9f9;
+  border-bottom-color: transparent;
+}
+.wasabi-tab.default.active {
+  background: transparent;
+  color: #2db7f5;
+}
+
+  /*
+  此处专门心怡制定
+  */
+.wasabi-tab.green {
+  font-weight: normal;
+  color: #333333;
+  background: #ffffff;
+}
+
+
+.wasabi-tab.green.active {
+  background: #0ec2bc;
+  color: #ffffff;
+}
+
+.wasabi-tabs .section.default {
+  border-top: 1px solid #d9d9d9;
+  height:100%;
+}
+
+.wasabi-tabs .section.green {
+  border-top: 1px solid #0ec2bc;
+  height: 100%;
+}
+
+
+.wasabi-tab.white{
+  font-weight: normal;
+  color: #0ec2bc;
+  background: #ffffff;
+  border: 1px solid #0ec2bc;
+  border-bottom: none;
+}
+.wasabi-tab.white.active {
+  background: linear-gradient(#27dcbd, #0ec2bc);
+  color: #ffffff;
+}
+.wasabi-tabs .section.white {
+  border-top: 1px solid #0ec2bc;
+  height: 100%;
+}
+
+
+.wasabi-tabs .section>div {
+  display:none;
+}
+.wasabi-tabs .section>.active
+{
+  display:block;
+}
+
+

@@ -1,0 +1,119 @@
+/**
+列表样式。create by wangzy
+ */
+@import url("../base.scss");
+.miniTable{
+  width: 100%;
+}
+.wasabiSetHeaderModal .wasabi-modal-container .wasabi-modal .wasabi-modal-content{
+  overflow: hidden;
+}
+.miniTable .firstTd{
+  text-align: center;
+  color: #6b6b6b;
+}
+.miniTable .centerTd{
+  text-align: left;
+  padding-left: 20px;
+  color: #575757;
+}
+.miniTable .lastTd{
+  position: relative;
+}
+.miniTable > tbody > tr.dragOver{
+  background: #f8f8f8;
+}
+.miniTable > tbody >tr:hover{
+  background: #f8f8f8;
+  cursor: move;
+}
+.miniTable > tbody >tr td:first-child{
+  position: relative;
+}
+.miniTable > tbody >tr td:first-child>i{
+  display: none;
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  margin-top: -7px;
+}
+.miniTable > tbody >tr:hover td:first-child>i{
+  display: inline-block;
+}
+.miniTable > thead > tr > th{
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0px;
+  white-space:nowrap;//强制不换行
+  height: 38px;
+  line-height: 38px;
+}
+
+.miniTable > tbody > tr > td {
+  border-right: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  padding: 0px;
+  white-space:nowrap;//强制不换行
+  height: 38px;
+  line-height: 38px;
+}
+
+.miniTable > thead > tr > th:last-child{
+  width: 110px;
+}
+ .miniTable > thead > tr > th:first-child,  .miniTable >  tbody > tr > td:first-child,.miniTable >  tbody > tr > td:last-child
+{
+   width: 100px;
+}
+
+ .fixed-table{
+   position: fixed;
+   width: 648px;
+   z-index: 2;
+ }
+ .fixed-table th{
+   background: #f8f8f8;
+   color: #323232;
+ }
+.real-table{
+  position: absolute;
+  width: 648px;
+  height: 357px;
+  top: 38px;
+  overflow: auto;
+}
+
+.table-checkbox{
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e3e4e5;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -9px;
+  margin-top: -9px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.table-checkbox.checked{
+  background: #0ec2bc;
+}
+.table-checkbox.checked:after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  background: transparent;
+  top: 4px;
+  left: 3px;
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-right: none;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}

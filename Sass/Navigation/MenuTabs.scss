@@ -1,0 +1,275 @@
+
+@import url("../base.scss") ;
+.wasabi-nav-container>section{
+    width: 100%;
+    position: absolute;
+    top: 80px;
+}
+.tabsection
+{
+    display: none;
+}
+.checkedsection
+{
+    width: 100%;
+}
+iframe
+{
+    width: 100%;
+    border: none;
+}
+.wasabi-nav-tabs {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0px;
+    height: 40px;
+    background-color:#0d4043;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+}
+.wasabi-nav-tabs>li {
+    float:left;
+    position: relative;
+    display: block;
+    height: 40px;
+    padding-left: 1px;
+
+}
+
+.wasabi-nav-tabs .tabmenu
+{
+    background-image:url('../../img/oms_logo.png');
+    background-size: 92px 22px;
+    background-position: center center;
+    width: 92px;
+    height: 40px;
+    margin-left: 12px;
+    background-repeat: no-repeat;
+
+}
+
+.wasabi-nav-tabs .content
+{
+    margin-left: 10px;
+}
+
+.wasabi-nav-tabs .tabhome {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #89a7a9;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 18px;
+}
+.wasabi-nav-tabs .tabhome:hover{
+    color:#2ec9c2;
+}
+.wasabi-nav-tabs .tabuser {
+
+    width: 40px;
+    height:40px;
+    float:right;
+    font-family: 'icomoon' !important;
+    color:#86a0a1;
+
+}
+.wasabi-nav-tabs .tabuser-control{
+    width: 300px;
+    overflow-x: visible;
+    overflow-y: visible;
+    height: 40px;
+    float: right;
+    font-family: 'icomoon' !important;
+    color:#86a0a1;
+}
+.wasabi-nav-tabs .tabuser:before
+{
+    content: "\e957";
+    font-size: 20px;
+    top: 10px;
+    position: absolute;
+    left: 10px;
+}
+.wasabi-nav-tabs .tabuser:hover,
+.wasabi-nav-tabs .tabuser.active
+{
+   color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wasabi-nav-container .tabWrap .left{
+    width: 20px;
+    height: 100%;
+    float: left;
+}
+
+.wasabi-nav-container .tabWrap .left:before{
+    font-size: 20px;
+    color: #86a0a1;
+    top:9px;
+    position: absolute;
+
+}
+.wasabi-nav-container .tabWrap .left:hover:before
+{
+    color: #2ec9c2;
+}
+
+.wasabi-nav-container .tabWrap .right{
+    width: 20px;
+    height: 100%;
+    float: right;
+}
+.wasabi-nav-container .tabWrap .right:before{
+    font-size: 20px;
+    color: #86a0a1;
+    top:9px;
+    position: absolute;
+}
+.wasabi-nav-container .tabWrap .right:hover:before {
+    color: #2ec9c2;
+}
+
+.wasabi-nav-container .tabWrap{
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    position: absolute;
+    top: 40px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.wasabi-nav-container .tabWrap{
+    overflow: hidden;
+    position: relative;
+}
+
+.wasabi-nav-container > .tabWrap>ul{
+    height: 40px;
+    float: left;
+    position: relative;
+}
+.wasabi-nav-container > .tabWrap>ul>.bottomLine{
+    width: 121px;
+    height: 3px;
+    background: #1ec9c3;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.wasabi-nav-container > .tabWrap>ul>li{
+    border-right: 1px solid #e6e6e6;
+}
+.wasabi-nav-container > .tabWrap>ul>li > a {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    margin-right: 0px;
+    text-decoration: none;
+    border: none;
+    padding-left:0px;
+    width:120px;
+    padding-right: 1px;
+    overflow: hidden;
+}
+.wasabi-nav-container > .tabWrap ul>li > a:hover
+{
+
+
+}
+.wasabi-nav-container > .tabWrap ul>li.active > a{
+    border-bottom: 3px solid #1ec9c3;
+}
+.wasabi-nav-container > .tabWrap ul>li.active > a.noBottomBorder{
+    border-bottom: none;
+}
+
+.wasabi-nav-container > .tabWrap ul>li > a .text{
+    color:#666666;
+    font-size: 12px;
+    width:100px;
+    padding-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    border: none;
+}
+
+.wasabi-nav-container > .tabWrap ul>li> a:hover .text{
+    color: #1ec9c3;
+    font-weight: bold;
+}
+//.wasabi-nav-container > .tabWrap ul>li.active > a .text{
+//    color: #1ec9c3;
+//    font-weight: bold;
+//}
+
+.wasabi-nav-container > .tabWrap ul>li .icon{
+    top: 12px;
+    left: 10px;
+    position: absolute;
+    font-size: 16px;
+    color: #86a0a1;
+
+
+}
+.wasabi-nav-container > .tabWrap ul>li.active .icon {
+    color: #1ec9c3;
+}
+.wasabi-nav-container > .tabWrap ul>li .closeicon{
+    position: absolute;
+    top: 9px;
+    right: 8px;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.wasabi-nav-container > .tabWrap ul>li .closeicon:before {
+    color: #86a0a1;
+
+}
+//.wasabi-nav-container > .tabWrap ul>li.active .closeicon:before{
+//    color:#2ec9c2;
+//}
+
+.wasabi-nav-container > .tabWrap ul>li:hover:before{
+
+    color:#2ec9c2;
+
+}
+.wasabi-nav-container > .tabWrap ul>li .closeicon:hover:before{
+    color:#2ec9c2;
+}
+
+.wasabi-nav-container > .tabWrap ul>li .split{
+    float: right;
+    or: transparent;
+    width: 1px;
+    height: 20px;
+    background-color: transparent;
+    position: absolute;
+    right: 0px;
+    top: 12px;
+}
+
+

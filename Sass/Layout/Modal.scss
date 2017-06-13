@@ -1,0 +1,146 @@
+/*
+create by wangzy
+desc:模态窗口样式
+*/
+@import url("../base.scss");
+.wasabi-modal-container.active
+{
+  display: block;
+}
+
+.wasabi-modal-container {
+  position: fixed;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.wasabi-overlay.active {
+  left: 0;
+  opacity: 0.1;
+  filter: alpha(opacity=10);
+}
+.wasabi-overlay {
+ position: fixed;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 3;
+  background-color: rgba(0,0,0,.2);
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.wasabi-modal-container .wasabi-modal {
+  position: absolute;
+  border: 1px solid #c9cbce;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 30px 0px #888888;
+  overflow: hidden;
+}
+.wasabi-modal-container .wasabi-modal.fadein {
+  -webkit-animation: modal 0.218s ease-in;
+  animation: modal 0.218s ease-in;
+}
+
+ .wasabi-modal-close {
+   background: url(../../img/diwasabi-btns.png) no-repeat;
+   float: right;
+   line-height: normal;
+   text-decoration: none;
+   width: 18px;
+   height:18px;
+   position: absolute;
+   right: 10px;
+   top: 18px;
+   cursor: pointer;
+}
+.wasabi-modal-close:hover {
+  background: url(../../img/diwasabi-btnsHover.png) no-repeat;
+}
+
+ .wasabi-modal-header {
+    font-size: 14px;
+   font-weight: 500;
+    height:42px;
+    line-height: 42px;
+    color: #333333;
+    background-color: #eff0f1;
+    padding-left:20px!important;
+    text-align: left;
+    border-bottom: 1px solid #e1e2e3;
+    cursor: move;
+    -webkit-user-select:none;
+     -moz-user-select:none;
+      -ms-user-select:none;
+          user-select:none;
+
+}
+
+.wasabi-modal-container .wasabi-modal .wasabi-modal-content {
+  overflow: auto;
+  width: 100%;
+  position: absolute;
+  top:42px;
+}
+.wasabi-modal-container .wasabi-modal{
+  text-align: left;
+  bottom: 0px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 100%;
+  position: absolute;
+}
+.wasabi-modal-footer{
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fafafa;
+  border-top: 1px solid #ebebeb;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: right;
+}
+.wasabi-modal-footer .left{
+  margin-left: 20px;
+  float: left;
+}
+.wasabi-modal-footer .right{
+  float: right;
+}
+
+.wasabi-modal-tip{
+  position: absolute;
+  bottom: 60px;
+  height: 36px;
+  width: 100%;
+  line-height: 36px;
+  background: #ffd4b6;
+  opacity: 0.9;
+  filter:alpha(opacity=90);
+  color: #5e2600;
+  font-size: 14px;
+  padding-left: 24px;
+  font-weight: 500;
+}
+.wasabi-modal-tip .icon-close{
+  color: #866b5a;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -7px;
+  cursor: pointer;
+}
+.wasabi-modal-tip .icon-close:hover{
+  color: #5e2600;
+}
+

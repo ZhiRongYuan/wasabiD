@@ -1,0 +1,60 @@
+/*
+开头样式 create by liangjiaxuan
+*/
+@import url("../base.scss") ;
+.syncbtn {
+  width:50px;
+  height:25px;
+  border-radius:12px;
+  position:relative;
+  font-size:12px;
+  box-sizing: border-box;
+}
+
+.checktrue {
+  background-color: #1ec9c3;
+  border: 1px solid #1ec9c3;
+}
+
+.checkfalse {
+  background-color: #CACACA;
+  border: 1px solid #CACACA;
+}
+.checktrue.disabled,.checkfalse.disabled
+{
+  cursor: not-allowed;
+}
+
+.syncbtn:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  top: -1px;
+  -webkit-transition: all ease-in 0.2s;
+}
+
+.checktrue:after{
+  left: 100%;
+  margin-left: -24px;
+}
+
+
+.checkfalse:after {
+  left: 0px;
+  /*left:0px;*/
+}
+
+.wasabi-switch-inner{
+  color: #fff;
+  font-size: 12px;
+  margin-left: 28px;
+  display: block;
+  line-height: 25px;
+}
+.checktrue .wasabi-switch-inner{
+  margin-left: 8px;
+}
